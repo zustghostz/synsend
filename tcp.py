@@ -89,8 +89,8 @@ def CreateSocket():
         sys.exit()
     s.setsockopt(socket.IPPROTO_IP,socket.IP_HDRINCL,1)
     return s
-source_ip='192.168.198.136'
-dest_ip='192.168.0.19'
+source_ip='192.168.198.136'#你的源ip地址
+dest_ip='192.168.0.19'#你的目的ip地址
 port=80
 s=CreateSocket()
 ip_header=CreateIPHeader(source_ip,dest_ip)
